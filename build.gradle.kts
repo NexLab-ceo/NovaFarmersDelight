@@ -1,5 +1,5 @@
 group = "fr.ateastudio.farmersdelight"
-version = "1.4.3"
+version = "1.4.3+mc26.3"
 
 plugins {
     alias(libs.plugins.kotlin)
@@ -22,10 +22,10 @@ addon {
     main = "fr.ateastudio.farmersdelight.NovaFarmersDelight"
     authors = listOf("Katalijst")
     description = "Farming's Delight ported to Nova"
-    website = "https://atea-studio.fr/nova-addons"
+    website = "https://github.com/NexLab-ceo/NovaFarmersDelight"
     prefix = "FarmersDelight"
-    
-    // output directory for the generated addon jar is read from the "outDir" project property (-PoutDir="...")
+
+    // Output directory for the generated addon jar: ./gradlew addonJar -PoutDir=artifacts
     val outDir = project.findProperty("outDir")
     if (outDir is String)
         destination.set(File(outDir))

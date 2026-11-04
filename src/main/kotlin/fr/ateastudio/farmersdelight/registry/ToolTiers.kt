@@ -1,13 +1,11 @@
 package fr.ateastudio.farmersdelight.registry
 
-import fr.ateastudio.farmersdelight.NovaFarmersDelight.registerToolTier
-import xyz.xenondevs.nova.initialize.Init
-import xyz.xenondevs.nova.initialize.InitStage
+import net.kyori.adventure.key.Key
 
+/**
+ * Custom tool tier identifiers in Nova 0.25 are namespaced Keys.
+ */
 @Suppress("unused")
-@Init(stage = InitStage.PRE_PACK)
 object ToolTiers {
-    
-    val FLINT = registerToolTier("flint")
-    
+    val FLINT: Key = Key.key("farmersdelight", "flint")
 }

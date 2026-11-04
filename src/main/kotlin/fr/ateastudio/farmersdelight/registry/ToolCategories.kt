@@ -1,11 +1,12 @@
 package fr.ateastudio.farmersdelight.registry
 
-import fr.ateastudio.farmersdelight.NovaFarmersDelight.registerToolCategory
-import xyz.xenondevs.nova.initialize.Init
-import xyz.xenondevs.nova.initialize.InitStage
+import net.kyori.adventure.key.Key
 
+/**
+ * Custom tool category identifiers in Nova 0.25 are namespaced Keys,
+ * not registry-created ToolCategory objects.
+ */
 @Suppress("unused")
-@Init(stage = InitStage.PRE_PACK)
 object ToolCategories {
-    val KNIFE = registerToolCategory("knife")
+    val KNIFE: Key = Key.key("farmersdelight", "knife")
 }

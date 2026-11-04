@@ -3,22 +3,31 @@
 
 <img src="https://i.imgur.com/aDELzhM.png" width="50%">
 <p align="center">
-  <a href="https://github.com/Atea-Studio/NovaFarmersDelight/stargazers">
-    <img src="https://img.shields.io/github/stars/Atea-Studio/NovaFarmersDelight">
+  <a href="https://github.com/NexLab-ceo/NovaFarmersDelight/stargazers">
+    <img src="https://img.shields.io/github/stars/NexLab-ceo/NovaFarmersDelight">
   </a>
-  <a href="https://github.com/Atea-Studio/NovaFarmersDelight/releases">
-    <img src="https://img.shields.io/github/downloads/Atea-Studio/NovaFarmersDelight/total.svg">
+  <a href="https://github.com/NexLab-ceo/NovaFarmersDelight/releases">
+    <img src="https://img.shields.io/github/downloads/NexLab-ceo/NovaFarmersDelight/total.svg">
   </a>
 </p>
 ---
 
 <img src="https://i.imgur.com/Iy0ddGy.png" width="45%"> <img src="https://i.imgur.com/Ktk1Pee.png" width="45%">
 
+## Compatibility
+
+- Minecraft Java **26.3**
+- Paper **26.3**
+- Nova **0.25.0-alpha.5** (addon API/catalog)
+- Java **25**
+
+This branch is the 26.3 port. Nova 0.24.x and Minecraft 26.2 are not supported by this build.
+
 ## Overview
 
 **Farmer's Delight** is a Nova Addon that brings the beloved farming and cooking mechanics of the original **Farmer's Delight** mod into Paper servers using the [**Nova Framework**](https://github.com/xenondevs/Nova).
 
-With an intuitive cooking system and a variety of familiar ingredients, players can prepare **delicious meals** such as sandwiches, salads, stews, desserts, and more. Additionally, this addon introduces **Decorative blocks and items** for immersive builds.
+With an intuitive cooking system and a variety of familiar ingredients, players can prepare **delicious meals** such as sandwiches, salads, stews, desserts, and more. Additionally, this addon introduces **decorative blocks and items** for immersive builds.
 
 Whether you're running a survival server, an RPG world, or just want to enhance the farming and cooking aspects of Minecraft, this plugin is for you!
 
@@ -29,24 +38,30 @@ Whether you're running a survival server, an RPG world, or just want to enhance 
 
 <img width="534" height="1326" alt="image" src="https://github.com/user-attachments/assets/73249fce-c7af-4904-b132-7fa621c5a430" />
 
+## Build
+
+Use JDK 25 and run:
+
+```bash
+./gradlew addonJar -PoutDir=artifacts
+```
+
+The addon JAR will be written to `artifacts/`.
 
 ## Installation
-1. **Ensure you have PaperMC** installed on your server.
-2. [**Download the latest release of the addon**](https://github.com/Atea-Studio/NovaFarmersDelight/releases)
-4. [**Install the Nova plugin**](https://github.com/xenondevs/Nova)
-5. **Place Nova plugin and the FarmersDelight Nova addon** into your `plugins/` folder.
-6. **Restart your server** and enjoy the new farming and cooking mechanics!
+1. Install a Paper server for Minecraft 26.3.
+2. Install [Nova 0.25.0-alpha.5](https://github.com/xenondevs/Nova/releases/tag/0.25.0-alpha.5).
+3. Put Nova and the FarmersDelight addon JAR in the server's `plugins/` folder.
+4. Restart the server.
 
 ## Configuration
 The addon comes with config files in `plugins/FarmersDelight`, allowing server owners to adjust mechanics, balance recipes, and tweak gameplay elements.
 
 ## Contributing
-Thank you for your interest in contributing! If you'd like to help improve the plugin, feel free to:
-- Report issues or suggest new features via the **GitHub Issues** page.
-- Submit pull requests with optimizations, fixes, or new content.
+- Report issues or suggest features via GitHub Issues.
+- Submit pull requests with optimizations and fixes.
 
 ## Support
-If you encounter any issues or have feature requests, please open an issue on GitHub!
+If you encounter any issues or have feature requests, please open an issue on GitHub.
 
 Happy farming! 🌾🍽
-
