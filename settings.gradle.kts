@@ -9,7 +9,8 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from("xyz.xenondevs.nova:catalog:0.24.0")
+            // Nova 0.25.x targets Minecraft 26.3 and replaces the 0.24 API.
+            from("xyz.xenondevs.nova:catalog:0.25.0-alpha.5")
         }
     }
 }
